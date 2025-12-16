@@ -1,0 +1,98 @@
+import { Container } from '@/components/Container'
+
+const faqs = [
+  [
+    {
+      question: 'フリープランでどこまで使えますか？',
+      answer:
+        'フリープランでは、1公演・10名までのメンバーで、タスク管理・スケジュール管理・メンバー管理の基本機能をすべてご利用いただけます。',
+    },
+    {
+      question: 'いつでもプランを変更できますか？',
+      answer:
+        'はい、いつでもアップグレード・ダウングレードが可能です。アップグレードは即時反映され、ダウングレードは次の請求サイクルから適用されます。',
+    },
+    {
+      question: '支払い方法は何がありますか？',
+      answer:
+        'クレジットカード（Visa、Mastercard、American Express、JCB）でのお支払いに対応しています。Stripeを通じた安全な決済を行っています。',
+    },
+  ],
+  [
+    {
+      question: 'データのエクスポートはできますか？',
+      answer:
+        'タスク一覧やスケジュールのデータは、必要に応じてエクスポート機能を順次追加予定です。現在は画面上での管理が中心となります。',
+    },
+    {
+      question: 'スマートフォンでも使えますか？',
+      answer:
+        'はい、Webブラウザから利用できるため、スマートフォンやタブレットでもお使いいただけます。レスポンシブ対応しています。',
+    },
+    {
+      question: 'チームメンバーの招待方法は？',
+      answer:
+        '招待リンクを発行して共有するだけで、簡単にメンバーを追加できます。リンクには有効期限を設定できます。',
+    },
+  ],
+  [
+    {
+      question: '複数の団体で利用できますか？',
+      answer:
+        '一人のアカウントで複数の組織に参加できます。劇団とイベント制作会社など、異なるチームでの利用も可能です。',
+    },
+    {
+      question: 'セキュリティは大丈夫ですか？',
+      answer:
+        'Supabaseの認証基盤を使用し、すべての通信はHTTPSで暗号化されています。データは安全に保護されています。',
+    },
+    {
+      question: 'サポートはありますか？',
+      answer:
+        'スタンダードプランでは優先サポートをご利用いただけます。フリープランの方もお問い合わせいただけますが、回答にお時間をいただく場合があります。',
+    },
+  ],
+]
+
+export function Faqs() {
+  return (
+    <section
+      id="faq"
+      aria-labelledby="faq-title"
+      className="relative overflow-hidden bg-slate-50 py-20 sm:py-32"
+    >
+      <Container className="relative">
+        <div className="mx-auto max-w-2xl lg:mx-0">
+          <h2
+            id="faq-title"
+            className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl"
+          >
+            よくあるご質問
+          </h2>
+          <p className="mt-4 text-lg tracking-tight text-slate-700">
+            ご不明な点がございましたら、お気軽にお問い合わせください。
+          </p>
+        </div>
+        <ul
+          role="list"
+          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3"
+        >
+          {faqs.map((column, columnIndex) => (
+            <li key={columnIndex}>
+              <ul role="list" className="flex flex-col gap-y-8">
+                {column.map((faq, faqIndex) => (
+                  <li key={faqIndex}>
+                    <h3 className="font-display text-lg/7 text-slate-900">
+                      {faq.question}
+                    </h3>
+                    <p className="mt-4 text-sm text-slate-700">{faq.answer}</p>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ))}
+        </ul>
+      </Container>
+    </section>
+  )
+}

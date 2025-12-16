@@ -1,0 +1,3 @@
+[submodule "tailwind-plus"]
+	path = tailwind-plus
+	url = https://github.com/tocca-systems/tailwind-plus.git
