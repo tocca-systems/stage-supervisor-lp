@@ -4,7 +4,7 @@ export function Logo({ className }: { className?: string }) {
   return (
     <Image
       src="/logo-with-text.png"
-      alt="Stage Supervisor"
+      alt="GEKI TOCCA"
       width={200}
       height={40}
       className={className}

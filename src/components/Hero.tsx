@@ -10,7 +10,7 @@ export function Hero() {
       <div className="flex justify-center mb-12">
         <Image
           src="/logo-with-text.png"
-          alt="Stage Supervisor"
+          alt="GEKI TOCCA"
           width={400}
           height={80}
           className="h-20 w-auto sm:h-24 md:h-32"

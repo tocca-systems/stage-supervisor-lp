@@ -9,7 +9,7 @@ export function Footer() {
       <Container>
         <div className="py-16">
           <p className="text-center font-display text-xl font-semibold text-slate-900">
-            Stage Supervisor
+            GEKI TOCCA
           </p>
           <nav className="mt-8 text-sm" aria-label="クイックリンク">
             <div className="-my-1 flex justify-center gap-x-6">
@@ -27,7 +27,7 @@ export function Footer() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-slate-500 sm:mt-0">
-            Copyright &copy; {new Date().getFullYear()} Stage Supervisor. All rights reserved.
+            Copyright &copy; {new Date().getFullYear()} GEKI TOCCA. All rights reserved.
           </p>
         </div>
       </Container>
