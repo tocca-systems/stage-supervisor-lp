@@ -1,7 +1,6 @@
 import Link from 'next/link'
 
 import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
 
 export function Footer() {
@@ -9,8 +8,10 @@ export function Footer() {
     <footer className="bg-slate-50">
       <Container>
         <div className="py-16">
-          <Logo className="mx-auto h-10 w-auto" />
-          <nav className="mt-10 text-sm" aria-label="クイックリンク">
+          <p className="text-center font-display text-xl font-semibold text-slate-900">
+            Stage Supervisor
+          </p>
+          <nav className="mt-8 text-sm" aria-label="クイックリンク">
             <div className="-my-1 flex justify-center gap-x-6">
               <NavLink href="#features">機能</NavLink>
               <NavLink href="#pricing">料金</NavLink>

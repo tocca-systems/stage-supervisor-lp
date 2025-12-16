@@ -1,10 +1,24 @@
+import Image from 'next/image'
+
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 
 export function Hero() {
   return (
-    <Container className="pt-20 pb-16 text-center lg:pt-32">
-      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+    <Container className="pt-10 pb-16 text-center lg:pt-16">
+      {/* 大きなロゴ */}
+      <div className="flex justify-center mb-12">
+        <Image
+          src="/logo-with-text.png"
+          alt="Stage Supervisor"
+          width={400}
+          height={80}
+          className="h-20 w-auto sm:h-24 md:h-32"
+          priority
+        />
+      </div>
+
+      <h1 className="mx-auto max-w-4xl font-display text-4xl font-medium tracking-tight text-slate-900 sm:text-6xl">
         舞台制作の
         <span className="relative whitespace-nowrap text-violet-600">
           <svg
@@ -45,7 +59,7 @@ export function Hero() {
           </svg>
         </Button>
       </div>
-      <div className="mt-20">
+      <div className="mt-16">
         <p className="font-display text-base text-slate-900">
           演劇・ミュージカル・ダンス公演・イベント制作に
         </p>
