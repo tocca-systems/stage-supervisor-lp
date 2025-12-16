@@ -17,7 +17,7 @@ export function CallToAction() {
             チームの制作進行を、もっとスムーズに。
             フリープランで今すぐお試しいただけます。
           </p>
-          <Button href="https://stage-supervisor-saas.vercel.app/auth/sign-up" color="white" className="mt-10">
+          <Button href="https://gekiapp.tocca.systems/auth/sign-up" color="white" className="mt-10">
             無料で始める
           </Button>
         </div>

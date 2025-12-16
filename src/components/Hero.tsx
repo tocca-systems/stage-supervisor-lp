@@ -38,7 +38,7 @@ export function Hero() {
         公演ごとのタスク、スケジュール、メンバーを一元化して、制作進行をスムーズに。
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="https://stage-supervisor-saas.vercel.app/auth/sign-up">
+        <Button href="https://gekiapp.tocca.systems/auth/sign-up">
           無料で始める
         </Button>
         <Button href="#features" variant="outline">
