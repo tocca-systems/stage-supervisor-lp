@@ -140,7 +140,7 @@ export function Pricing() {
             name="フリープラン"
             price="¥0"
             description="小規模チームや個人での利用に最適。基本機能をすべて無料で。"
-            href="https://stage-supervisor.vercel.app/auth/sign-up"
+            href="https://stage-supervisor-saas.vercel.app/auth/sign-up"
             features={[
               '公演1件まで',
               'メンバー10名まで',
@@ -155,7 +155,7 @@ export function Pricing() {
             price="¥980"
             priceUnit="/月"
             description="複数公演を並行管理。プロの制作チームに。"
-            href="https://stage-supervisor.vercel.app/auth/sign-up"
+            href="https://stage-supervisor-saas.vercel.app/auth/sign-up"
             features={[
               '公演数 無制限',
               'メンバー数 無制限',

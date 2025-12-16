@@ -74,7 +74,7 @@ function MobileNavigation() {
         <MobileNavLink href="#features">機能</MobileNavLink>
         <MobileNavLink href="#pricing">料金</MobileNavLink>
         <hr className="m-2 border-slate-300/40" />
-        <MobileNavLink href="https://stage-supervisor.vercel.app/auth/sign-in">ログイン</MobileNavLink>
+        <MobileNavLink href="https://stage-supervisor-saas.vercel.app/auth/sign-in">ログイン</MobileNavLink>
       </PopoverPanel>
     </Popover>
   )
@@ -93,9 +93,9 @@ export function Header() {
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <div className="hidden md:block">
-              <NavLink href="https://stage-supervisor.vercel.app/auth/sign-in">ログイン</NavLink>
+              <NavLink href="https://stage-supervisor-saas.vercel.app/auth/sign-in">ログイン</NavLink>
             </div>
-            <Button href="https://stage-supervisor.vercel.app/auth/sign-up" color="blue">
+            <Button href="https://stage-supervisor-saas.vercel.app/auth/sign-up" color="blue">
               <span>
                 無料で始める
               </span>
