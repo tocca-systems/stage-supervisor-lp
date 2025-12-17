@@ -146,15 +146,18 @@ export function PrimaryFeatures() {
                         {feature.description}
                       </p>
                     </div>
-                    <div className="mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-violet-900/20 lg:mt-0">
-                      <div className="aspect-[16/10] bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center p-8">
+                    <div className="mt-10 overflow-hidden rounded-xl shadow-xl shadow-violet-900/20 lg:mt-0">
+                      <div className="relative aspect-[16/10] bg-gradient-to-br from-slate-100 to-slate-200">
                         <Image
                           src={feature.image}
                           alt={feature.title}
-                          width={500}
-                          height={300}
-                          className="w-full h-full object-contain"
+                          fill
+                          className="object-contain p-8"
                         />
+                        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/90 via-slate-900/70 to-transparent pt-12 pb-6 px-6">
+                          <h4 className="text-xl font-semibold text-white mb-2">{feature.title}</h4>
+                          <p className="text-sm text-slate-200 leading-relaxed">{feature.description}</p>
+                        </div>
                       </div>
                     </div>
                   </TabPanel>

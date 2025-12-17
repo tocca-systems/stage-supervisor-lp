@@ -9,11 +9,11 @@ export function Hero() {
       {/* 大きなロゴ */}
       <div className="flex justify-center mb-12">
         <Image
-          src="/logo_lockup_horizontal.png"
+          src="/logo_lockup_vertical.png"
           alt="GEKI TOCCA"
-          width={400}
-          height={80}
-          className="h-20 w-auto sm:h-24 md:h-32"
+          width={300}
+          height={200}
+          className="h-32 w-auto sm:h-40 md:h-48"
           priority
         />
       </div>
