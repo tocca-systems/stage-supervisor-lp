@@ -11,6 +11,7 @@ import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
+import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
 
 function MobileNavLink({
@@ -86,6 +87,9 @@ export function Header() {
       <Container>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
+            <Link href="/" aria-label="ホーム">
+              <Logo className="h-8 w-auto" />
+            </Link>
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="#features">機能</NavLink>
               <NavLink href="#pricing">料金</NavLink>

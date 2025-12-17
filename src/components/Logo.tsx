@@ -3,7 +3,7 @@ import Image from 'next/image'
 export function Logo({ className }: { className?: string }) {
   return (
     <Image
-      src="/logo-with-text.png"
+      src="/logo_lockup_horizontal.png"
       alt="GEKI TOCCA"
       width={200}
       height={40}

@@ -9,7 +9,7 @@ export function Hero() {
       {/* 大きなロゴ */}
       <div className="flex justify-center mb-12">
         <Image
-          src="/logo-with-text.png"
+          src="/logo_lockup_horizontal.png"
           alt="GEKI TOCCA"
           width={400}
           height={80}

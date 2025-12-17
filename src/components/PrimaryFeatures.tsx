@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import clsx from 'clsx'
 
@@ -11,6 +12,7 @@ const features = [
     title: 'タスク管理',
     description:
       '公演準備に必要なタスクを一覧で管理。担当者のアサイン、期限設定、ステータス管理で進捗を見える化します。',
+    image: '/logo_task.png',
     icon: (
       <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
@@ -21,6 +23,7 @@ const features = [
     title: 'スケジュール管理',
     description:
       '稽古・本番・ミーティングなど、すべてのイベントをカレンダーで一元管理。予定変更も素早く共有できます。',
+    image: '/logo_schedule.png',
     icon: (
       <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -31,6 +34,7 @@ const features = [
     title: 'メンバー管理',
     description:
       'キャスト・スタッフをまとめて管理。招待リンクで簡単に参加でき、ロールごとに権限を設定できます。',
+    image: '/logo_member.png',
     icon: (
       <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
@@ -41,6 +45,7 @@ const features = [
     title: '公演別管理',
     description:
       '複数の公演を並行して管理可能。公演ごとにタスク・スケジュール・メンバーを整理できます。',
+    image: '/logo_stage.png',
     icon: (
       <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
@@ -142,14 +147,14 @@ export function PrimaryFeatures() {
                       </p>
                     </div>
                     <div className="mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-violet-900/20 lg:mt-0">
-                      <div className="aspect-[16/10] bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center">
-                        <div className="text-center p-8">
-                          <div className="mx-auto w-16 h-16 rounded-full bg-violet-100 flex items-center justify-center text-violet-600 mb-4">
-                            {feature.icon}
-                          </div>
-                          <p className="text-slate-600 font-medium">{feature.title}</p>
-                          <p className="text-sm text-slate-500 mt-2 max-w-sm mx-auto">{feature.description}</p>
-                        </div>
+                      <div className="aspect-[16/10] bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center p-8">
+                        <Image
+                          src={feature.image}
+                          alt={feature.title}
+                          width={500}
+                          height={300}
+                          className="w-full h-full object-contain"
+                        />
                       </div>
                     </div>
                   </TabPanel>
