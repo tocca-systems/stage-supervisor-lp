@@ -1,23 +1,9 @@
-import Image from 'next/image'
-
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 
 export function Hero() {
   return (
-    <Container className="pt-10 pb-16 text-center lg:pt-16">
-      {/* 大きなロゴ */}
-      <div className="flex justify-center mb-12">
-        <Image
-          src="/logo_lockup_vertical.png"
-          alt="GEKI TOCCA"
-          width={300}
-          height={200}
-          className="h-32 w-auto sm:h-40 md:h-48"
-          priority
-        />
-      </div>
-
+    <Container className="pt-16 pb-16 text-center lg:pt-24">
       <h1 className="mx-auto max-w-4xl font-display text-4xl font-medium tracking-tight text-slate-900 sm:text-6xl">
         舞台制作の
         <span className="relative whitespace-nowrap text-violet-600">

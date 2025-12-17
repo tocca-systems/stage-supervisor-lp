@@ -15,14 +15,14 @@ export function Footer() {
             <div className="-my-1 flex justify-center gap-x-6">
               <NavLink href="#features">機能</NavLink>
               <NavLink href="#pricing">料金</NavLink>
-              <NavLink href="https://gekiapp.tocca.systems/legal/terms">利用規約</NavLink>
-              <NavLink href="https://gekiapp.tocca.systems/legal/privacy">プライバシーポリシー</NavLink>
+              <NavLink href="/legal/terms">利用規約</NavLink>
+              <NavLink href="/legal/privacy">プライバシーポリシー</NavLink>
             </div>
           </nav>
         </div>
         <div className="flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between">
           <div className="flex gap-x-6">
-            <Link href="https://gekiapp.tocca.systems/legal/commercial-law" className="text-sm text-slate-500 hover:text-slate-700">
+            <Link href="/legal/commercial-law" className="text-sm text-slate-500 hover:text-slate-700">
               特定商取引法に基づく表記
             </Link>
           </div>

@@ -1,19 +1,21 @@
-import Link from 'next/link'
+import Image from 'next/image'
 
 import { Button } from '@/components/Button'
-import { Logo } from '@/components/Logo'
 import { SlimLayout } from '@/components/SlimLayout'
 
 export default function NotFound() {
   return (
     <SlimLayout>
-      <div className="flex">
-        <Link href="/" aria-label="ホーム">
-          <Logo className="h-10 w-auto" />
-        </Link>
+      <div className="flex justify-center">
+        <Image
+          src="/logo_404.png"
+          alt="404 - ページが見つかりません"
+          width={600}
+          height={400}
+          className="w-full max-w-md object-contain"
+        />
       </div>
-      <p className="mt-20 text-sm font-medium text-gray-700">404</p>
-      <h1 className="mt-3 text-lg font-semibold text-gray-900">
+      <h1 className="mt-8 text-lg font-semibold text-gray-900">
         ページが見つかりません
       </h1>
       <p className="mt-3 text-sm text-gray-700">
