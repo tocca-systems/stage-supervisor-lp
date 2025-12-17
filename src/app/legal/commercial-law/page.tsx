@@ -28,20 +28,21 @@ export default function CommercialLawPage() {
                   <th className="py-4 pr-4 text-left font-semibold text-gray-900 align-top w-1/3">
                     事業者名
                   </th>
-                  <td className="py-4 text-gray-700">TOCCA SYSTEMS</td>
+                  <td className="py-4 text-gray-700">株式会社トッカシステムズ</td>
                 </tr>
                 <tr className="border-b border-gray-200">
                   <th className="py-4 pr-4 text-left font-semibold text-gray-900 align-top">
                     代表者名
                   </th>
-                  <td className="py-4 text-gray-700">請求があった場合に遅滞なく開示いたします</td>
+                  <td className="py-4 text-gray-700">代表取締役　谷 樹</td>
                 </tr>
                 <tr className="border-b border-gray-200">
                   <th className="py-4 pr-4 text-left font-semibold text-gray-900 align-top">
                     所在地
                   </th>
                   <td className="py-4 text-gray-700">
-                    請求があった場合に遅滞なく開示いたします
+                    〒101-0051<br />
+                    東京都千代田区神田神保町2-20 ワカヤギビル3階
                   </td>
                 </tr>
                 <tr className="border-b border-gray-200">
@@ -49,10 +50,9 @@ export default function CommercialLawPage() {
                     連絡先
                   </th>
                   <td className="py-4 text-gray-700">
-                    メールアドレス：support@tocca.systems<br />
-                    <span className="text-sm text-gray-500">
-                      ※電話番号は請求があった場合に遅滞なく開示いたします。お問い合わせはメールにてお願いいたします。
-                    </span>
+                    TEL：03-5213-4278<br />
+                    FAX：03-5213-4279<br />
+                    メールアドレス：<a href="mailto:info@tocca-net.jp" className="text-violet-600 hover:text-violet-800">info@tocca-net.jp</a>
                   </td>
                 </tr>
                 <tr className="border-b border-gray-200">
@@ -74,7 +74,18 @@ export default function CommercialLawPage() {
                     販売価格
                   </th>
                   <td className="py-4 text-gray-700">
-                    料金ページに記載の金額（税込）
+                    各有料プランの利用料金は、サービス内または料金ページに表示された金額とします。<br />
+                    表示価格は、特に記載がない限り税込価格です。
+                  </td>
+                </tr>
+                <tr className="border-b border-gray-200">
+                  <th className="py-4 pr-4 text-left font-semibold text-gray-900 align-top">
+                    商品代金以外の必要料金
+                  </th>
+                  <td className="py-4 text-gray-700">
+                    • インターネット接続に必要な通信費<br />
+                    • 通信環境に関する費用<br />
+                    <span className="text-sm">（※ これらはユーザーの負担となります）</span>
                   </td>
                 </tr>
                 <tr className="border-b border-gray-200">
@@ -82,7 +93,7 @@ export default function CommercialLawPage() {
                     支払方法
                   </th>
                   <td className="py-4 text-gray-700">
-                    クレジットカード決済（Stripe決済代行）
+                    クレジットカード決済（決済代行サービス：Stripe）
                   </td>
                 </tr>
                 <tr className="border-b border-gray-200">
@@ -90,10 +101,8 @@ export default function CommercialLawPage() {
                     支払時期
                   </th>
                   <td className="py-4 text-gray-700">
-                    <ul className="list-disc pl-5 mt-0">
-                      <li>月額プラン：毎月の更新日に課金</li>
-                      <li>年額プラン：お申込み時に一括課金</li>
-                    </ul>
+                    • 月額プラン：申込時および以後毎月の更新日に課金されます<br />
+                    • 年額プラン：申込時に一括課金されます
                   </td>
                 </tr>
                 <tr className="border-b border-gray-200">
@@ -101,7 +110,7 @@ export default function CommercialLawPage() {
                     サービス提供時期
                   </th>
                   <td className="py-4 text-gray-700">
-                    登録・決済完了後、直ちにご利用いただけます
+                    利用登録および決済完了後、直ちに利用可能となります。
                   </td>
                 </tr>
                 <tr className="border-b border-gray-200">
@@ -109,15 +118,27 @@ export default function CommercialLawPage() {
                     解約について
                   </th>
                   <td className="py-4 text-gray-700">
-                    課金責任者のみ解約手続きが可能です。解約後も契約期間終了日まではサービスをご利用いただけます。返金には応じられません。
+                    • 解約は、団体ごとに設定された課金責任者（billing_admin）のみが行うことができます。<br />
+                    • 解約手続き完了後も、契約期間終了日までは本サービスを利用することができます。<br />
+                    • 契約期間途中での解約であっても、返金は行いません。
                   </td>
                 </tr>
                 <tr className="border-b border-gray-200">
                   <th className="py-4 pr-4 text-left font-semibold text-gray-900 align-top">
-                    返品・返金
+                    支払い失敗時の対応
                   </th>
                   <td className="py-4 text-gray-700">
-                    本サービスはデジタルコンテンツおよびオンラインサービスの性質上、返品・返金には応じられません。
+                    • 支払いが失敗した場合でも、直ちにサービスを停止することはありません。<br />
+                    • 一定期間の猶予を設けた上で、支払いが確認できない場合、利用制限または利用停止を行うことがあります。
+                  </td>
+                </tr>
+                <tr className="border-b border-gray-200">
+                  <th className="py-4 pr-4 text-left font-semibold text-gray-900 align-top">
+                    返品・返金について
+                  </th>
+                  <td className="py-4 text-gray-700">
+                    本サービスはデジタルコンテンツおよびオンラインサービスの性質上、返品・返金には応じられません。<br />
+                    ただし、当社の責に帰すべき重大な不具合がある場合は、個別に協議のうえ対応することがあります。
                   </td>
                 </tr>
                 <tr className="border-b border-gray-200">
@@ -125,19 +146,25 @@ export default function CommercialLawPage() {
                     動作環境
                   </th>
                   <td className="py-4 text-gray-700">
-                    インターネット接続環境および最新版のWebブラウザ（Chrome、Firefox、Safari、Edge推奨）
+                    本サービスを利用するために必要な推奨環境は、サービス内またはヘルプページに記載します。
                   </td>
                 </tr>
                 <tr>
                   <th className="py-4 pr-4 text-left font-semibold text-gray-900 align-top">
-                    注意事項
+                    表現およびサービスに関する注意書き
                   </th>
                   <td className="py-4 text-gray-700">
-                    本サービスの効果や成果には個人差があります。
+                    本サービスの効果や成果には個人差があり、特定の結果を保証するものではありません。
                   </td>
                 </tr>
               </tbody>
             </table>
+
+            <hr className="my-8" />
+
+            <div className="text-sm text-gray-600">
+              <p>【制定日】2025年12月17日</p>
+            </div>
           </div>
         </div>
       </Container>
