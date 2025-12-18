@@ -71,7 +71,7 @@ function Plan({
     <section
       className={clsx(
         'flex flex-col rounded-3xl px-6 sm:px-8',
-        featured ? 'bg-violet-600 py-8' : 'lg:py-8',
+        featured ? 'bg-cyan-600 py-8' : 'lg:py-8',
       )}
     >
       <h3 className="mt-5 font-display text-lg text-white">{name}</h3>
@@ -125,7 +125,7 @@ export function Pricing() {
         <div className="md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
             <span className="relative whitespace-nowrap">
-              <SwirlyDoodle className="absolute top-1/2 left-0 h-[1em] w-full fill-violet-400" />
+              <SwirlyDoodle className="absolute top-1/2 left-0 h-[1em] w-full fill-cyan-400" />
               <span className="relative">シンプルな料金</span>
             </span>
             で、すべての機能を。

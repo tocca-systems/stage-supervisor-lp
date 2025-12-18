@@ -12,7 +12,7 @@ export default function CommercialLawPage() {
         <div className="mx-auto max-w-3xl">
           <Link
             href="/"
-            className="text-sm text-violet-600 hover:text-violet-800 mb-8 inline-block"
+            className="text-sm text-cyan-600 hover:text-cyan-800 mb-8 inline-block"
           >
             &larr; トップページへ戻る
           </Link>
@@ -53,7 +53,7 @@ export default function CommercialLawPage() {
                   <td className="py-4 text-gray-700">
                     TEL：03-5213-4278<br />
                     FAX：03-5213-4279<br />
-                    メールアドレス：<a href="mailto:info@tocca-net.jp" className="text-violet-600 hover:text-violet-800">info@tocca-net.jp</a>
+                    メールアドレス：<a href="mailto:info@tocca-net.jp" className="text-cyan-600 hover:text-cyan-800">info@tocca-net.jp</a>
                   </td>
                 </tr>
                 <tr className="border-b border-gray-200">

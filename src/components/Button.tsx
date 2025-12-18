@@ -12,14 +12,14 @@ const variantStyles = {
   solid: {
     slate:
       'bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900',
-    blue: 'bg-violet-600 text-white hover:text-slate-100 hover:bg-violet-500 active:bg-violet-800 active:text-violet-100 focus-visible:outline-violet-600',
-    violet: 'bg-violet-600 text-white hover:text-slate-100 hover:bg-violet-500 active:bg-violet-800 active:text-violet-100 focus-visible:outline-violet-600',
+    blue: 'bg-cyan-600 text-white hover:text-slate-100 hover:bg-cyan-500 active:bg-cyan-800 active:text-cyan-100 focus-visible:outline-cyan-600',
+    cyan: 'bg-cyan-600 text-white hover:text-slate-100 hover:bg-cyan-500 active:bg-cyan-800 active:text-cyan-100 focus-visible:outline-cyan-600',
     white:
-      'bg-white text-slate-900 hover:bg-violet-50 active:bg-violet-200 active:text-slate-600 focus-visible:outline-white',
+      'bg-white text-slate-900 hover:bg-cyan-50 active:bg-cyan-200 active:text-slate-600 focus-visible:outline-white',
   },
   outline: {
     slate:
-      'ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-violet-600 focus-visible:ring-slate-300',
+      'ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-cyan-600 focus-visible:ring-slate-300',
     white:
       'ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white',
   },

@@ -12,7 +12,7 @@ export default function PrivacyPage() {
         <div className="mx-auto max-w-3xl">
           <Link
             href="/"
-            className="text-sm text-violet-600 hover:text-violet-800 mb-8 inline-block"
+            className="text-sm text-cyan-600 hover:text-cyan-800 mb-8 inline-block"
           >
             &larr; トップページへ戻る
           </Link>
@@ -138,7 +138,7 @@ export default function PrivacyPage() {
 
             <div className="text-sm text-gray-600">
               <p>【事業者名】株式会社トッカシステムズ</p>
-              <p>【連絡先】<a href="mailto:info@tocca-net.jp" className="text-violet-600 hover:text-violet-800">info@tocca-net.jp</a></p>
+              <p>【連絡先】<a href="mailto:info@tocca-net.jp" className="text-cyan-600 hover:text-cyan-800">info@tocca-net.jp</a></p>
               <p className="mt-4">【制定日】2025年12月17日</p>
             </div>
           </div>

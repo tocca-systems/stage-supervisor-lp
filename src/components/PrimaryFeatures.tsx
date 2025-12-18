@@ -78,15 +78,15 @@ export function PrimaryFeatures() {
     <section
       id="features"
       aria-label="舞台制作に必要な機能"
-      className="relative overflow-hidden bg-violet-600 pt-20 pb-28 sm:py-32"
+      className="relative overflow-hidden bg-cyan-600 pt-20 pb-28 sm:py-32"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-violet-600 via-purple-600 to-violet-700" />
+      <div className="absolute inset-0 bg-gradient-to-br from-cyan-600 via-teal-600 to-cyan-700" />
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
             舞台制作に必要な機能を、ひとつに。
           </h2>
-          <p className="mt-6 text-lg tracking-tight text-violet-100">
+          <p className="mt-6 text-lg tracking-tight text-cyan-100">
             タスク・スケジュール・メンバー管理を一元化。
             チーム全員が同じ情報を共有できます。
           </p>
@@ -115,7 +115,7 @@ export function PrimaryFeatures() {
                             'font-display text-lg data-selected:not-data-focus:outline-hidden flex items-center gap-3',
                             selectedIndex === featureIndex
                               ? 'text-white'
-                              : 'text-violet-100 hover:text-white',
+                              : 'text-cyan-100 hover:text-white',
                           )}
                         >
                           <span className="hidden lg:block">{feature.icon}</span>
@@ -128,7 +128,7 @@ export function PrimaryFeatures() {
                           'mt-2 hidden text-sm lg:block',
                           selectedIndex === featureIndex
                             ? 'text-white'
-                            : 'text-violet-100 group-hover:text-white',
+                            : 'text-cyan-100 group-hover:text-white',
                         )}
                       >
                         {feature.description}
@@ -146,7 +146,7 @@ export function PrimaryFeatures() {
                         {feature.description}
                       </p>
                     </div>
-                    <div className="mt-10 overflow-hidden rounded-xl shadow-xl shadow-violet-900/20 lg:mt-0">
+                    <div className="mt-10 overflow-hidden rounded-xl shadow-xl shadow-cyan-900/20 lg:mt-0">
                       <div className="relative aspect-[16/10] bg-gradient-to-br from-slate-100 to-slate-200">
                         <Image
                           src={feature.image}
