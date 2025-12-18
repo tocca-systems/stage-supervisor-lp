@@ -22,6 +22,7 @@ export default function CommercialLawPage() {
           </h1>
 
           <div className="prose prose-slate max-w-none">
+            <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
             <table className="min-w-full">
               <tbody>
                 <tr className="border-b border-gray-200">
@@ -159,6 +160,7 @@ export default function CommercialLawPage() {
                 </tr>
               </tbody>
             </table>
+            </div>
 
             <hr className="my-8" />
 

@@ -4,7 +4,7 @@ import { Container } from '@/components/Container'
 export function Hero() {
   return (
     <Container className="pt-16 pb-16 text-center lg:pt-24">
-      <h1 className="mx-auto max-w-4xl font-display text-4xl font-medium tracking-tight text-slate-900 sm:text-6xl">
+      <h1 className="mx-auto max-w-4xl font-display text-3xl font-medium tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
         舞台制作の
         <span className="relative whitespace-nowrap text-violet-600">
           <svg
@@ -23,7 +23,7 @@ export function Hero() {
         演劇・イベント制作チームのための管理ツール。
         公演ごとのタスク、スケジュール、メンバーを一元化して、制作進行をスムーズに。
       </p>
-      <div className="mt-10 flex justify-center gap-x-6">
+      <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-x-6">
         <Button href="https://gekiapp.tocca.systems/auth/sign-up">
           無料で始める
         </Button>
@@ -49,7 +49,7 @@ export function Hero() {
         <p className="font-display text-base text-slate-900">
           演劇・ミュージカル・ダンス公演・イベント制作に
         </p>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-slate-600">
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-x-4 gap-y-3 sm:gap-x-8 sm:gap-y-4 text-slate-600">
           <span className="flex items-center gap-2">
             <svg className="h-5 w-5 text-violet-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
