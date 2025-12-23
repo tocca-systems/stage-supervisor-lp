@@ -70,8 +70,8 @@ function Plan({
   return (
     <section
       className={clsx(
-        'flex flex-col rounded-3xl px-6 sm:px-8',
-        featured ? 'bg-cyan-600 py-8' : 'lg:py-8',
+        'flex flex-col rounded-3xl px-6 py-8 sm:px-8',
+        featured ? 'bg-cyan-600' : 'bg-slate-700 ring-1 ring-slate-500',
       )}
     >
       <h3 className="mt-5 font-display text-lg text-white">{name}</h3>
@@ -103,7 +103,7 @@ function Plan({
       </ul>
       <Button
         href={href}
-        variant={featured ? 'solid' : 'outline'}
+        variant="solid"
         color="white"
         className="mt-8"
         aria-label={`${name}プランを始める`}
@@ -144,6 +144,7 @@ export function Pricing() {
             features={[
               '公演1件まで',
               'メンバー10名まで',
+              'ストレージ100MB（1ファイル10MBまで）',
               'タスク管理',
               'スケジュール管理',
               'メンバー管理',
@@ -159,6 +160,8 @@ export function Pricing() {
             features={[
               '公演数 無制限',
               'メンバー数 無制限',
+              'ストレージ10GB（1ファイル50MBまで）',
+              'ファイルのタスク・イベント紐づけ',
               'タスクテンプレート',
               'リマインド通知（準備中）',
               '新機能の先行利用',
