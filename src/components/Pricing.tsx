@@ -105,7 +105,7 @@ function Plan({
         href={href}
         variant="solid"
         color="white"
-        className="mt-8"
+        className="mt-auto pt-8"
         aria-label={`${name}プランを始める`}
       >
         {featured ? '今すぐ始める' : '無料で始める'}
