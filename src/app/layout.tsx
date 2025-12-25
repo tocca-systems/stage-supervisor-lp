@@ -50,7 +50,7 @@ export default function RootLayout({
         notoSansJP.variable,
       )}
     >
-      <body className="flex h-full flex-col">{children}</body>
+      <body className="flex min-h-full flex-col">{children}</body>
     </html>
   )
 }

@@ -70,14 +70,14 @@ function Plan({
   return (
     <section
       className={clsx(
-        'flex flex-col rounded-3xl px-6 py-8 sm:px-8',
+        'flex h-full flex-col rounded-3xl px-6 py-8 sm:px-8',
         featured ? 'bg-cyan-600' : 'bg-slate-700 ring-1 ring-slate-500',
       )}
     >
       <h3 className="mt-5 font-display text-lg text-white">{name}</h3>
       <p
         className={clsx(
-          'mt-2 text-base',
+          'mt-2 min-h-[56px] text-base',
           featured ? 'text-white' : 'text-slate-400',
         )}
       >
@@ -87,10 +87,19 @@ function Plan({
         {price}
         {priceUnit && <span className="text-lg font-normal">{priceUnit}</span>}
       </p>
+      <Button
+        href={href}
+        variant="solid"
+        color="white"
+        className="mt-8 w-full"
+        aria-label={`${name}プランを始める`}
+      >
+        {featured ? '今すぐ始める' : '無料で始める'}
+      </Button>
       <ul
         role="list"
         className={clsx(
-          'order-last mt-10 flex flex-col gap-y-3 text-sm',
+          'mt-8 flex flex-grow flex-col gap-y-3 text-sm',
           featured ? 'text-white' : 'text-slate-200',
         )}
       >
@@ -101,15 +110,6 @@ function Plan({
           </li>
         ))}
       </ul>
-      <Button
-        href={href}
-        variant="solid"
-        color="white"
-        className="mt-8"
-        aria-label={`${name}プランを始める`}
-      >
-        {featured ? '今すぐ始める' : '無料で始める'}
-      </Button>
     </section>
   )
 }
@@ -135,7 +135,7 @@ export function Pricing() {
             チームの規模に合わせてアップグレードできます。
           </p>
         </div>
-        <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-4xl lg:grid-cols-2 xl:mx-0 xl:gap-x-8">
+        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-stretch gap-y-10 lg:max-w-4xl lg:grid-cols-2 lg:gap-x-8">
           <Plan
             name="フリープラン"
             price="¥0"
