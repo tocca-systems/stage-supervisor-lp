@@ -40,8 +40,8 @@ export function SecondaryFeatures() {
             実際の画面をご紹介
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            シンプルで直感的なインターフェース。
-            誰でもすぐに使い始められます。
+            <span className="whitespace-nowrap">シンプルで直感的なインターフェース。</span>
+            <span className="whitespace-nowrap">誰でもすぐに使い始められます。</span>
           </p>
         </div>
 

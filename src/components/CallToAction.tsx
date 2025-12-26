@@ -14,8 +14,11 @@ export function CallToAction() {
             今すぐ始めましょう
           </h2>
           <p className="mt-4 text-lg tracking-tight text-cyan-100">
-            チームの制作進行を、もっとスムーズに。
-            フリープランで今すぐお試しいただけます。
+            <span className="whitespace-nowrap">チームの制作進行を、</span>
+            <span className="whitespace-nowrap">もっとスムーズに。</span>
+            <br className="hidden sm:block" />
+            <span className="whitespace-nowrap">フリープランで</span>
+            <span className="whitespace-nowrap">今すぐお試しいただけます。</span>
           </p>
           <Button href="https://gekiapp.tocca.systems/auth/sign-up" color="white" className="mt-10">
             無料で始める

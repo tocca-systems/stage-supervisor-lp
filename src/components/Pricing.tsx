@@ -128,11 +128,11 @@ export function Pricing() {
               <SwirlyDoodle className="absolute top-1/2 left-0 h-[1em] w-full fill-cyan-400" />
               <span className="relative">シンプルな料金</span>
             </span>
-            で、すべての機能を。
+            <span className="whitespace-nowrap">で、すべての機能を。</span>
           </h2>
           <p className="mt-4 text-lg text-slate-400">
-            まずは無料プランでお試しください。
-            チームの規模に合わせてアップグレードできます。
+            <span className="whitespace-nowrap">まずは無料プランでお試しください。</span>
+            <span className="whitespace-nowrap">チームの規模に合わせてアップグレードできます。</span>
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-stretch gap-y-10 lg:max-w-4xl lg:grid-cols-2 lg:gap-x-8">

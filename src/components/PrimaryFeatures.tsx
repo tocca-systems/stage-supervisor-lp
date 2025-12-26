@@ -84,11 +84,12 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            舞台制作に必要な機能を、ひとつに。
+            <span className="whitespace-nowrap">舞台制作に必要な機能を、</span>
+            <span className="whitespace-nowrap">ひとつに。</span>
           </h2>
           <p className="mt-6 text-lg tracking-tight text-cyan-100">
-            タスク・スケジュール・メンバー管理を一元化。
-            チーム全員が同じ情報を共有できます。
+            <span className="whitespace-nowrap">タスク・スケジュール・メンバー管理を一元化。</span>
+            <span className="whitespace-nowrap">チーム全員が同じ情報を共有できます。</span>
           </p>
         </div>
         <TabGroup
