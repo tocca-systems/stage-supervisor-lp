@@ -5,7 +5,9 @@ import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
+import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { ScrollToTop } from '@/components/ScrollToTop'
+import { TheaterTerminology } from '@/components/TheaterTerminology'
 
 export default function Home() {
   return (
@@ -13,7 +15,9 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <TheaterTerminology />
         <PrimaryFeatures />
+        <SecondaryFeatures />
         <CallToAction />
         <Pricing />
         <Faqs />

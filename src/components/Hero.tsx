@@ -1,11 +1,12 @@
+import Image from 'next/image'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 
 export function Hero() {
   return (
     <Container className="pt-16 pb-16 text-center lg:pt-24">
-      <h1 className="mx-auto max-w-4xl font-display text-3xl font-medium tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-        舞台制作の
+      <h1 className="mx-auto max-w-4xl font-display text-3xl font-medium tracking-tight text-slate-900 sm:text-5xl lg:max-w-none lg:whitespace-nowrap lg:text-6xl">
+        <span className="whitespace-nowrap">舞台制作の</span>
         <span className="relative whitespace-nowrap text-cyan-600">
           <svg
             aria-hidden="true"
@@ -17,11 +18,11 @@ export function Hero() {
           </svg>
           <span className="relative">タスク管理</span>
         </span>
-        を、もっとシンプルに。
+        <span className="whitespace-nowrap">をもっとシンプルに。</span>
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        演劇・イベント制作チームのための管理ツール。
-        公演ごとのタスク、スケジュール、メンバーを一元化して、制作進行をスムーズに。
+        <span className="whitespace-nowrap">演劇・イベント制作チームのための管理ツール。</span>
+        <span className="whitespace-nowrap">公演ごとのタスク、スケジュール、メンバーを一元化して、制作進行をスムーズに。</span>
       </p>
       <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-x-6">
         <Button href="https://gekiapp.tocca.systems/auth/sign-up">
@@ -74,6 +75,21 @@ export function Hero() {
             </svg>
             複数公演対応
           </span>
+        </div>
+      </div>
+      <div className="mt-16 sm:mt-20">
+        <div className="relative mx-auto max-w-5xl">
+          {/* 背景のグラデーション装飾 */}
+          <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-cyan-400 via-teal-400 to-cyan-500 opacity-20 blur-2xl" />
+          {/* スクリーンショット */}
+          <Image
+            src="/screenshots/production-detail.png"
+            alt="舞台スーパーバイザーの公演詳細画面"
+            width={1280}
+            height={800}
+            className="relative rounded-xl shadow-2xl lg:rounded-2xl"
+            priority
+          />
         </div>
       </div>
     </Container>
