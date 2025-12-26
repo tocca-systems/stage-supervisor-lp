@@ -142,12 +142,13 @@ export function Pricing() {
             description="小規模チームや個人での利用に最適。基本機能をすべて無料で。"
             href="https://gekiapp.tocca.systems/auth/sign-up"
             features={[
-              '公演1件まで',
+              '公演3件まで',
               'メンバー10名まで',
               'ストレージ100MB（1ファイル10MBまで）',
               'タスク管理',
               'スケジュール管理',
               'メンバー管理',
+              '予算管理（1公演のみ）',
             ]}
           />
           <Plan
