@@ -54,6 +54,7 @@ function Plan({
   name,
   price,
   priceUnit,
+  subPrice,
   description,
   href,
   features,
@@ -62,6 +63,7 @@ function Plan({
   name: string
   price: string
   priceUnit?: string
+  subPrice?: string
   description: string
   href: string
   features: Array<string>
@@ -86,6 +88,7 @@ function Plan({
       <p className="order-first font-display text-5xl font-light tracking-tight text-white">
         {price}
         {priceUnit && <span className="text-lg font-normal">{priceUnit}</span>}
+        {subPrice && <span className="ml-3 text-xl font-medium text-white">（{subPrice}）</span>}
       </p>
       <Button
         href={href}
@@ -156,6 +159,7 @@ export function Pricing() {
             name="スタンダードプラン"
             price="¥980"
             priceUnit="/月"
+            subPrice="¥9,800/年"
             description="複数公演を並行管理。プロの制作チームに。"
             href="https://gekiapp.tocca.systems/auth/sign-up"
             features={[
