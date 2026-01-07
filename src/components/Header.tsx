@@ -59,7 +59,7 @@ function MobileNavigation() {
   return (
     <Popover>
       <PopoverButton
-        className="relative z-10 flex h-8 w-8 items-center justify-center focus:not-data-focus:outline-hidden"
+        className="relative z-10 flex h-8 w-8 items-center justify-center data-[focus]:outline-none"
         aria-label="メニューを開く"
       >
         {({ open }) => <MobileNavIcon open={open} />}
