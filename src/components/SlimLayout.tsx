@@ -12,11 +12,14 @@ export function SlimLayout({ children }: { children: React.ReactNode }) {
           </main>
         </div>
         <div className="hidden sm:contents lg:relative lg:block lg:flex-1">
+          {/* 装飾的な背景画像 */}
           <Image
             className="absolute inset-0 h-full w-full object-cover"
             src={backgroundImage}
             alt=""
-            unoptimized
+            fill
+            sizes="50vw"
+            priority
           />
         </div>
       </div>

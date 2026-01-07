@@ -20,6 +20,17 @@ const features = [
     ),
   },
   {
+    title: '予算管理',
+    description:
+      '公演の収支を一目で把握。支出・収入の記録、チケット売上管理、立替精算まで、お金の管理をシンプルに。',
+    image: '/logo_budget.png',
+    icon: (
+      <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
+  },
+  {
     title: 'スケジュール管理',
     description:
       '稽古・本番・ミーティングなど、すべてのイベントをカレンダーで一元管理。予定変更も素早く共有できます。',
@@ -113,7 +124,7 @@ export function PrimaryFeatures() {
                       <h3>
                         <Tab
                           className={clsx(
-                            'font-display text-lg data-selected:not-data-focus:outline-hidden flex items-center gap-3',
+                            'font-display text-lg data-[selected]:data-[focus]:outline-none flex items-center gap-3',
                             selectedIndex === featureIndex
                               ? 'text-white'
                               : 'text-cyan-100 hover:text-white',
@@ -153,6 +164,7 @@ export function PrimaryFeatures() {
                           src={feature.image}
                           alt={feature.title}
                           fill
+                          sizes="(max-width: 1024px) 100vw, 58vw"
                           className="object-contain p-8"
                         />
                         <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/90 via-slate-900/70 to-transparent pt-12 pb-6 px-6">

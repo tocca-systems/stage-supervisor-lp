@@ -1,6 +1,8 @@
 'use client'
 
 import Image from 'next/image'
+import clsx from 'clsx'
+
 import { Container } from '@/components/Container'
 
 const features = [
@@ -32,7 +34,7 @@ export function SecondaryFeatures() {
     <section
       id="secondary-features"
       aria-label="実際の画面"
-      className="py-20 sm:py-32 bg-slate-50"
+      className="bg-slate-50 py-20 sm:py-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
@@ -49,13 +51,14 @@ export function SecondaryFeatures() {
           {features.map((feature, index) => (
             <div
               key={feature.name}
-              className={`flex flex-col gap-8 lg:gap-16 ${
+              className={clsx(
+                'flex flex-col items-center gap-8 lg:gap-16',
                 index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'
-              } items-center`}
+              )}
             >
               {/* テキスト部分 */}
               <div className="lg:w-1/3 text-center lg:text-left">
-                <span className="inline-block px-3 py-1 text-sm font-medium text-cyan-700 bg-cyan-100 rounded-full mb-4">
+                <span className="mb-4 inline-block rounded-full bg-cyan-100 px-3 py-1 text-sm font-medium text-cyan-700">
                   {feature.name}
                 </span>
                 <h3 className="font-display text-2xl tracking-tight text-slate-900 sm:text-3xl">
@@ -70,11 +73,12 @@ export function SecondaryFeatures() {
               <div className="lg:w-2/3">
                 <div className="relative">
                   {/* 背景装飾 */}
-                  <div className={`absolute -inset-4 rounded-2xl opacity-20 blur-xl ${
-                    index % 3 === 0 ? 'bg-gradient-to-r from-cyan-400 to-teal-400' :
-                    index % 3 === 1 ? 'bg-gradient-to-r from-teal-400 to-emerald-400' :
-                    'bg-gradient-to-r from-emerald-400 to-cyan-400'
-                  }`} />
+                  <div className={clsx(
+                    'absolute -inset-4 rounded-2xl opacity-20 blur-xl',
+                    index % 3 === 0 && 'bg-gradient-to-r from-cyan-400 to-teal-400',
+                    index % 3 === 1 && 'bg-gradient-to-r from-teal-400 to-emerald-400',
+                    index % 3 === 2 && 'bg-gradient-to-r from-emerald-400 to-cyan-400'
+                  )} />
                   {/* スクリーンショット */}
                   <Image
                     src={feature.image}
