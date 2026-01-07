@@ -13,6 +13,14 @@ const features = [
       '担当者・期限・優先度を設定して、公演準備の進捗を可視化。',
     image: '/screenshots/tasks.png',
   },
+  // TODO: 予算管理のスクリーンショットにデータが入ったら追加
+  // {
+  //   name: '予算管理',
+  //   summary: '公演の収支を一目で把握',
+  //   description:
+  //     '支出・収入の記録、チケット売上管理、立替精算まで、お金の管理をシンプルに。',
+  //   image: '/screenshots/budget.png',
+  // },
   {
     name: 'カレンダー',
     summary: '稽古・本番のスケジュールを一元管理',
