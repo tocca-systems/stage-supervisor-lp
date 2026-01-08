@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/logo.png',
-        width: 725,
-        height: 725,
+        width: 610,
+        height: 450,
         alt: 'GEKI TOCCA ロゴ',
       },
     ],
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: 'GEKI TOCCA - 舞台制作のタスク・スケジュール管理',
     description: '舞台・演劇・イベント制作チームのための管理ツール。公演ごとのタスク管理、イベントスケジュール、メンバー管理を一元化。',
     images: ['/logo.png'],
