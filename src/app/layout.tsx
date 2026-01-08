@@ -5,6 +5,7 @@ import clsx from 'clsx'
 import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://geki.tocca.systems'),
   title: {
     template: '%s - GEKI TOCCA',
     default: 'GEKI TOCCA - 舞台制作のタスク・スケジュール管理',
