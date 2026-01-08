@@ -21,8 +21,8 @@ export function Hero() {
         <span className="whitespace-nowrap">をもっとシンプルに。</span>
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        <span className="whitespace-nowrap">演劇・イベント制作チームのための管理ツール。</span>
-        <span className="whitespace-nowrap">公演ごとのタスク、スケジュール、メンバーを一元化して、制作進行をスムーズに。</span>
+        <span className="sm:whitespace-nowrap">演劇・イベント制作チームのための管理ツール。</span>
+        <span className="sm:whitespace-nowrap">公演ごとのタスク、スケジュール、メンバーを一元化して、制作進行をスムーズに。</span>
       </p>
       <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-x-6">
         <Button href="https://gekiapp.tocca.systems/auth/sign-up">
