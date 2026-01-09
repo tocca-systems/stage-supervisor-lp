@@ -55,12 +55,12 @@ export default function RootLayout({
     <html
       lang="ja"
       className={clsx(
-        'h-full scroll-smooth bg-white antialiased',
+        'h-full scroll-smooth bg-white antialiased overflow-x-hidden',
         inter.variable,
         notoSansJP.variable,
       )}
     >
-      <body className="flex min-h-full flex-col">{children}</body>
+      <body className="flex min-h-full flex-col overflow-x-hidden">{children}</body>
     </html>
   )
 }

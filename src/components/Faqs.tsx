@@ -75,20 +75,23 @@ export function Faqs() {
         </div>
         <ul
           role="list"
-          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3 lg:grid-rows-[repeat(3,auto)]"
+          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-4 sm:gap-6 lg:max-w-none lg:grid-cols-3 lg:grid-rows-[repeat(3,auto)] lg:gap-8"
         >
           {faqs.map((column, columnIndex) => (
-            <li key={columnIndex} className="lg:row-span-3 lg:grid lg:grid-rows-subgrid lg:gap-y-8">
-              <ul role="list" className="contents">
-                {column.map((faq, faqIndex) => (
-                  <li key={faqIndex} className="lg:[&:not(:first-child)]:pt-0">
-                    <h3 className="font-display text-lg/7 text-slate-900">
-                      {faq.question}
-                    </h3>
-                    <p className="mt-4 text-sm text-slate-700">{faq.answer}</p>
-                  </li>
-                ))}
-              </ul>
+            <li key={columnIndex} className="contents lg:row-span-3 lg:grid lg:grid-rows-subgrid lg:gap-y-8">
+              {column.map((faq, faqIndex) => (
+                <div
+                  key={faqIndex}
+                  className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-900/5 sm:p-8 lg:rounded-none lg:bg-transparent lg:p-0 lg:shadow-none lg:ring-0"
+                >
+                  <h3 className="font-display text-base/7 font-semibold text-slate-900 sm:text-lg/7">
+                    {faq.question}
+                  </h3>
+                  <p className="mt-3 border-t border-slate-100 pt-3 text-sm text-slate-700 sm:mt-4 sm:pt-4 lg:border-0 lg:pt-0">
+                    {faq.answer}
+                  </p>
+                </div>
+              ))}
             </li>
           ))}
         </ul>
