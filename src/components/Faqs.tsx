@@ -81,7 +81,10 @@ export function Faqs() {
             <li key={columnIndex} className="lg:row-span-3 lg:grid lg:grid-rows-subgrid lg:gap-y-8">
               <ul role="list" className="contents">
                 {column.map((faq, faqIndex) => (
-                  <li key={faqIndex} className="lg:[&:not(:first-child)]:pt-0">
+                  <li
+                    key={faqIndex}
+                    className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-900/5 lg:bg-transparent lg:p-0 lg:shadow-none lg:ring-0"
+                  >
                     <h3 className="font-display text-lg/7 text-slate-900">
                       {faq.question}
                     </h3>
