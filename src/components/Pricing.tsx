@@ -157,9 +157,9 @@ export function Pricing() {
           <Plan
             featured
             name="スタンダードプラン"
-            price="¥980"
+            price="¥1,000"
             priceUnit="/月"
-            subPrice="¥9,800/年"
+            subPrice="¥10,000/年"
             description="複数公演を並行管理。プロの制作チームに。"
             href="https://gekiapp.tocca.systems/auth/sign-up"
             features={[
