@@ -176,6 +176,9 @@ export function Pricing() {
             ]}
           />
         </div>
+        <p className="mt-10 text-center text-sm text-slate-400">
+          ※ 料金は予告なく変更される場合があります。最新の料金はサービス内の料金ページをご確認ください。
+        </p>
       </Container>
     </section>
   )
