@@ -15,6 +15,7 @@ export function Footer() {
             <div className="-my-1 flex flex-wrap justify-center gap-x-6 gap-y-2">
               <NavLink href="#features">機能</NavLink>
               <NavLink href="#pricing">料金</NavLink>
+              <NavLink href="/guide">使い方</NavLink>
               <NavLink href="/legal/terms">利用規約</NavLink>
               <NavLink href="/legal/privacy">プライバシーポリシー</NavLink>
             </div>
