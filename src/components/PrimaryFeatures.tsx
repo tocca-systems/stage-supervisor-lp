@@ -53,6 +53,17 @@ const features = [
     ),
   },
   {
+    title: 'チケット予約管理',
+    description:
+      'お客様向けの予約フォームを簡単作成。予約状況・残席・チェックインをリアルタイムで管理。リマインドメールも自動送信。',
+    image: '/logo_ticket.png',
+    icon: (
+      <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
+      </svg>
+    ),
+  },
+  {
     title: '公演別管理',
     description:
       '複数の公演を並行して管理可能。公演ごとにタスク・スケジュール・メンバーを整理できます。',
