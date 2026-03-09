@@ -35,6 +35,13 @@ const features = [
       '演出、舞台監督、照明、音響など、演劇制作特有の役職を自由に設定。',
     image: '/screenshots/positions.png',
   },
+  {
+    name: 'チケット予約',
+    summary: '予約フォームを簡単作成・共有',
+    description:
+      'お客様向けの予約フォームをワンクリックで作成。残席数の自動表示、チェックイン管理、リマインドメールの自動送信まで対応。',
+    image: '/screenshots/reservation-form.png',
+  },
 ]
 
 export function SecondaryFeatures() {
