@@ -55,7 +55,7 @@ const features = [
   {
     title: 'チケット予約管理',
     description:
-      'お客様向けの予約フォームを簡単作成。予約状況・残席・チェックインをリアルタイムで管理。リマインドメールも自動送信。',
+      'お客様向けの予約フォームを簡単作成。メンバー別リンクに加え、劇団扱いの共有リンクにも対応。予約状況・残席・チェックインをリアルタイムで管理。',
     image: '/logo_ticket.png',
     icon: (
       <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
