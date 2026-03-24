@@ -66,8 +66,8 @@ const steps = [
     number: 6,
     title: 'メンバーを招待',
     description:
-      '招待リンクを共有するだけで、チームメンバーを団体に追加。メンバーごとに管理者・メンバーの権限を設定して、安全に運用できます。',
-    image: '/screenshots/members.png',
+      '招待リンクを共有するだけで、チームメンバーを団体に追加。公演グループでチーム分けしたり、客演招待リンクで外部メンバーをゲスト参加させることもできます。',
+    image: '/screenshots/members-groups.png',
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
@@ -76,6 +76,31 @@ const steps = [
   },
   {
     number: 7,
+    title: '日程調整',
+    description:
+      '候補日を提示してメンバーの空き時間を収集。回答状況を一覧で比較し、最適な日程をワンクリックで決定。役職やグループで回答対象者を絞り込めます。',
+    image: '/screenshots/schedules-detail.png',
+    badge: 'フリー: 1公演のみ',
+    icon: (
+      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+      </svg>
+    ),
+  },
+  {
+    number: 8,
+    title: 'ファイル管理',
+    description:
+      '台本・図面・資料をアップロードして一元管理。タスクやイベントに紐づけて、必要な資料にすぐアクセスできます。',
+    image: '/screenshots/files.png',
+    icon: (
+      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+      </svg>
+    ),
+  },
+  {
+    number: 9,
     title: '予算管理',
     description:
       '公演の予算を設定し、経費をカテゴリごとに記録・管理。支出状況をリアルタイムで把握し、予算オーバーを未然に防ぎます。',
@@ -93,7 +118,7 @@ export function GuideContent({ hasBudgetImage = true }: { hasBudgetImage?: boole
   return (
     <div className="space-y-16 lg:space-y-24">
       {steps.map((step, index) => {
-        const showImage = step.image && (step.number !== 7 || hasBudgetImage)
+        const showImage = step.image && (step.number !== 9 || hasBudgetImage)
         const isEven = index % 2 === 1
 
         return (

@@ -13,27 +13,40 @@ const features = [
       '担当者・期限・優先度を設定して、公演準備の進捗を可視化。',
     image: '/screenshots/tasks.png',
   },
-  // TODO: 予算管理のスクリーンショットにデータが入ったら追加
-  // {
-  //   name: '予算管理',
-  //   summary: '公演の収支を一目で把握',
-  //   description:
-  //     '支出・収入の記録、チケット売上管理、立替精算まで、お金の管理をシンプルに。',
-  //   image: '/screenshots/budget.png',
-  // },
   {
     name: 'カレンダー',
     summary: '稽古・本番のスケジュールを一元管理',
     description:
-      '稽古、ミーティング、本番など、すべての予定をカレンダーで管理。',
+      '稽古、ミーティング、本番など、すべての予定をカレンダーで管理。Googleカレンダーとの連携で個人の予定と一緒に確認できます。',
     image: '/screenshots/calendar.png',
   },
   {
-    name: '役職管理',
-    summary: '演劇特有の役職をカスタマイズ',
+    name: '日程調整',
+    summary: 'メンバーの空き時間を見える化',
     description:
-      '演出、舞台監督、照明、音響など、演劇制作特有の役職を自由に設定。',
-    image: '/screenshots/positions.png',
+      '候補日を提示してメンバーが空き時間を回答。全員の都合を一覧で比較して、最適な日程をワンクリックで決定できます。',
+    image: '/screenshots/schedules-detail.png',
+  },
+  {
+    name: 'ファイル管理',
+    summary: '台本・図面・資料をまとめて共有',
+    description:
+      '公演に関するファイルをアップロードして一元管理。タスクやイベントに紐づけて、必要な資料にすぐアクセスできます。',
+    image: '/screenshots/files.png',
+  },
+  {
+    name: 'メンバー・グループ管理',
+    summary: 'チーム編成を柔軟に管理',
+    description:
+      '役職管理、公演グループでのチーム分け、客演招待リンクでの外部メンバー参加に対応。オムニバス公演のチーム分けもスムーズです。',
+    image: '/screenshots/members-groups.png',
+  },
+  {
+    name: '通知設定',
+    summary: '必要な情報だけを受け取る',
+    description:
+      'イベント変更、タスク更新、予約通知などをタイプ別にON/OFF。プッシュ通知にも対応し、重要な情報を見逃しません。',
+    image: '/screenshots/notification-settings.png',
   },
   {
     name: 'チケット予約',

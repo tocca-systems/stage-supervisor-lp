@@ -33,7 +33,7 @@ const features = [
   {
     title: 'スケジュール管理',
     description:
-      '稽古・本番・ミーティングなど、すべてのイベントをカレンダーで一元管理。予定変更も素早く共有できます。',
+      '稽古・本番・ミーティングなどをカレンダーで一元管理。日程調整機能で空き時間を集計し、Googleカレンダー連携で個人の予定と同期。',
     image: '/logo_schedule.png',
     icon: (
       <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -44,7 +44,7 @@ const features = [
   {
     title: 'メンバー管理',
     description:
-      'キャスト・スタッフをまとめて管理。招待リンクで簡単に参加でき、ロールごとに権限を設定できます。',
+      'キャスト・スタッフをまとめて管理。公演グループでチーム分け、客演招待で外部メンバーもゲスト参加。通知設定で必要な情報だけ受け取れます。',
     image: '/logo_member.png',
     icon: (
       <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
