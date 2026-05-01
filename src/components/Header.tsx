@@ -75,6 +75,7 @@ function MobileNavigation() {
         <MobileNavLink href="#features">機能</MobileNavLink>
         <MobileNavLink href="#pricing">料金</MobileNavLink>
         <MobileNavLink href="/guide">使い方</MobileNavLink>
+        <MobileNavLink href="/news">お知らせ</MobileNavLink>
         <hr className="m-2 border-slate-300/40" />
         <MobileNavLink href="https://gekiapp.tocca.systems/auth/sign-in">ログイン</MobileNavLink>
       </PopoverPanel>
@@ -95,6 +96,7 @@ export function Header() {
               <NavLink href="#features">機能</NavLink>
               <NavLink href="#pricing">料金</NavLink>
               <NavLink href="/guide">使い方</NavLink>
+              <NavLink href="/news">お知らせ</NavLink>
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
