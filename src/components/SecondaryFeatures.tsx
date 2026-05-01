@@ -14,8 +14,8 @@ const features = [
     image: '/screenshots/tasks.png',
   },
   {
-    name: 'カレンダー',
-    summary: '稽古・本番のスケジュールを一元管理',
+    name: 'スケジュール管理',
+    summary: '稽古・本番の予定を一元管理',
     description:
       '稽古、ミーティング、本番など、すべての予定をカレンダーで管理。Googleカレンダーとの連携で個人の予定と一緒に確認できます。',
     image: '/screenshots/calendar.png',
@@ -49,7 +49,7 @@ const features = [
     image: '/screenshots/notification-settings.png',
   },
   {
-    name: 'チケット予約',
+    name: 'チケット予約管理',
     summary: 'フライヤー画像も掲載できる予約フォーム',
     description:
       'お客様向けの予約フォームをワンクリックで作成。フライヤー画像・会場・住所・お支払い方法を掲載でき、メンバー別リンク・劇団扱いリンクにも対応。残席数の自動表示、チェックイン管理、リマインドメールの自動送信まで。',
