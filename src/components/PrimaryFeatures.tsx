@@ -53,9 +53,20 @@ const features = [
     ),
   },
   {
+    title: '掲示板',
+    description:
+      '公演内に複数チャンネルを作成して、メンバー間で情報共有。チャンネルごとに通知設定や閲覧範囲を細かく制御できるので、必要な人にだけ届きます。',
+    image: '/logo_board.png',
+    icon: (
+      <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+      </svg>
+    ),
+  },
+  {
     title: 'チケット予約管理',
     description:
-      'お客様向けの予約フォームを簡単作成。メンバー別リンクに加え、劇団扱いの共有リンクにも対応。予約状況・残席・チェックインをリアルタイムで管理。',
+      'お客様向けの予約フォームをワンクリックで作成。フライヤー画像・会場・支払い方法を掲載でき、メンバー別リンクや劇団扱いの共有リンクにも対応。予約状況・残席・チェックインをリアルタイムで管理。',
     image: '/logo_ticket.png',
     icon: (
       <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">

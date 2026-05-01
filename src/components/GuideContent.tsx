@@ -112,6 +112,19 @@ const steps = [
       </svg>
     ),
   },
+  {
+    number: 10,
+    title: 'チケット予約管理',
+    description:
+      'お客様向けの予約フォームを公演ごとに作成。フライヤー画像・会場・支払い方法を掲載でき、メンバー別リンクや劇団扱いの共有リンクで取り扱いを管理。残席数・チェックイン・リマインドメール送信まで一元管理できます。',
+    image: '/screenshots/reservation-form.png',
+    badge: 'フリー: 1公演のみ',
+    icon: (
+      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
+      </svg>
+    ),
+  },
 ]
 
 export function GuideContent({ hasBudgetImage = true }: { hasBudgetImage?: boolean }) {

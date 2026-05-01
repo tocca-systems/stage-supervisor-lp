@@ -24,10 +24,10 @@ export default function GuidePage() {
             使い方ガイド
           </h1>
           <p className="mt-4 text-lg text-cyan-100 max-w-2xl">
-            <span className="whitespace-nowrap">たった7ステップで、</span>
+            <span className="whitespace-nowrap">10ステップで、</span>
             <span className="whitespace-nowrap">チームの公演管理を始められます。</span>
             <br className="hidden sm:block" />
-            <span className="whitespace-nowrap">アカウント作成から予算管理まで、</span>
+            <span className="whitespace-nowrap">アカウント作成からチケット予約管理まで、</span>
             <span className="whitespace-nowrap">順番にご紹介します。</span>
           </p>
         </Container>
